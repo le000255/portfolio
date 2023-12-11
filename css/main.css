@@ -1,0 +1,95 @@
+:root {
+  /* color */
+  --cl-primnary: #19d6ba;
+  --cl-secondary: #0b2832;
+  --cl-base-white: #f6fbfe;
+  --cl-accent-1: #5b5f62;
+  --cl-accent-2: #d6b393;
+  --cl-accent-3: #17333d;
+  /* base text color */
+  /* not available */
+  /* ------------------------------------------ */
+
+  /* typography */
+  --font-heading: "Oswald", sans-serif;
+  --font-content: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--cl-base-white);
+}
+h1 {
+  font-weight: 700;
+}
+
+body {
+  font-family: var(--font-content);
+  color: var(--cl-base-white);
+}
+
+/* ------------- custom properties ------------ */
+
+/* overriding bootstrap */
+
+/* arrow link */
+
+.arrow-link {
+  color: var(--cl-primnary);
+}
+
+/* custom nav list container */
+.nav-list-container-custom {
+  gap: 0 clamp(2em, 10vw, 5.6em);
+}
+
+/* custom container */
+.container-custom {
+  max-width: 900px;
+}
+
+.bg-section-primary {
+  background-color: var(--cl-secondary);
+}
+.bg-section-accent {
+  background-color: var(--cl-accent-3);
+}
+.bg-footer {
+  background-color: var(--cl-accent-1);
+}
+
+/* image deco */
+
+.img-deco {
+  position: relative;
+  z-index: 0;
+  /* display: block; */
+}
+.img-deco::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 0.15rem solid var(--cl-accent-2);
+  top: 0.55rem;
+  left: 0.55rem;
+  z-index: -1;
+  /* background-color: red; */
+  /* transform: translate(50%, -50%); */
+}
+
+/* ----------------- sections ----------------- */
+/* home: hero section */
+
+.img-hero {
+  width: 100%;
+  aspect-ratio: 1/0.7;
+  object-fit: cover;
+  object-position: center clamp(60%, 2vw, 40%);
+}
