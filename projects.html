@@ -30,6 +30,7 @@
       <div class="container-md  d-flex justify-content-between">
         <a class="navbar-brand" href="index.html">
           <img src="images/logo.png" alt="Brand logo" width="40">
+          <span class="brand-txt">Eddie Le</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,27 +74,70 @@
         <p>
           As a student at Algonquin College, I had a great opportunity to tackle interesting challenges, helping me hone
           my web design and development skills. I'm proud to showcase these cool projects built with valuable learned
-          skillsets at college.
+          skillsets at the college.
         </p>
+        <!-- card grid -->
         <div class="container-cards pt-4">
 
           <div class="card text-light">
-            <img src="/images/project_portfolio.png" class="card-img-top" alt="...">
+            <div class="card-img-wrapper">
+              <img src="/images/project_portfolio.png" class="card-img-top" alt="...">
+            </div>
             <div class="card-body">
-              <span class="h5 txt-heading card-title d-inline-block">Card title</span>
-              <p class="card-text text-truncate">Some quick example text to build on the card title and make up the bulk
-                of the card's
-                content.</p>
-              <a href="#" class="btn btn-primary">
-                Go somewhere
-                <i class="bi bi-arrow-right"></i>
+              <div class="card-txt-wrapper">
+                <span class="h5 txt-heading card-title d-inline-block">My Portfolio</span>
+                <p class="card-text text-truncate">The projects demonstrate my skillsets in design and development. The
+                  website is self-made from design to development and deployment.
+                </p>
+              </div>
+              <a href="https://github.com/le000255/portfolio" class="btn btn-primary" target="_blank"
+                rel="noopener noopener">
+                Learn more
+                <i class="bi bi-box-arrow-up-right"></i>
               </a>
             </div>
-          </div>
+          </div> <!-- end: my portfolio card -->
 
-        </div>
-      </div>
+          <div class="card text-light">
+            <div class="card-img-wrapper">
+              <img src="/images/project_flora-bakeshop.png" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <div class="card-txt-wrapper">
+                <span class="h5 txt-heading card-title d-inline-block">Flora's Bakeshop Page</span>
+                <p class="card-text text-truncate">This is the website I built from a previous design in my Design
+                  Foundations class at Algonquin College.
+                </p>
+              </div>
+              <a href="https://github.com/le000255/mtm6201-midterm" class="btn btn-primary" target="_blank"
+                rel="noopener noopener">
+                Learn more
+                <i class="bi bi-box-arrow-up-right"></i>
+              </a>
+            </div>
+          </div> <!-- end: flora bakeshop card -->
 
+          <div class="card text-light">
+            <div class="card-img-wrapper">
+              <img src="/images/project_placeholder.png" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <div class="card-txt-wrapper">
+                <span class="h5 txt-heading card-title d-inline-block">My Future Project</span>
+                <p class="card-text text-truncate">This is currently a placeholder for my upcoming project.
+                </p>
+              </div>
+              <a href="https://github.com/le000255/mtm6201-midterm" class="btn btn-primary disabled" target="_blank"
+                rel="noopener noopener">
+                Learn more
+                <i class="bi bi-box-arrow-up-right"></i>
+              </a>
+            </div>
+          </div> <!-- end: placeholder card -->
+
+        </div> <!-- end: card grid -->
+
+      </div> <!-- end: container -->
     </section>
 
   </main>
@@ -154,6 +198,10 @@
     </div>
 
   </footer>
+  <!-- bootstrap 5 js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

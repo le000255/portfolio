@@ -33,7 +33,8 @@ h3,
 h4,
 h5,
 h6,
-.txt-heading {
+.txt-heading,
+.navbar-brand .brand-txt {
   font-family: var(--font-heading);
   font-weight: 600;
   color: var(--cl-base-white);
@@ -52,7 +53,15 @@ h2 {
 /* overriding bootstrap */
 
 /* arrow link */
-
+.navbar-brand .brand-txt {
+  display: none;
+  color: var(--cl-primnary);
+  font-size: clamp(0.8rem, 10vw, 1.2rem);
+  @media screen and (min-width: 768px) {
+    display: inline;
+    padding-left: 0.5em;
+  }
+}
 .arrow-link,
 .custom-link {
   color: var(--cl-primnary);
@@ -60,7 +69,7 @@ h2 {
 
 /* custom nav list container */
 .nav-list-container-custom {
-  gap: 0 clamp(2em, 10vw, 5.6em);
+  gap: 0 clamp(1em, 8vw, 5.6em);
 }
 
 /* custom container */
@@ -96,7 +105,7 @@ h2 {
   margin-top: 8em;
   backdrop-filter: blur(0.5rem);
 }
-
+/* ------------- pages & sections ------------- */
 /* page header: projects */
 .page-header.projects-page {
   background-image: var(--pg-projecs-hd-deco);
@@ -128,7 +137,6 @@ h2 {
   top: 0.55rem;
   left: 0.55rem;
   z-index: -1;
-  /* background-color: red; */
   /* transform: translate(50%, -50%); */
 }
 
@@ -156,27 +164,28 @@ h2 {
   justify-items: center;
 }
 
-.card {
-  max-width: 18rem;
-  background-color: var(--cl-accent-1);
-  border: .2rem solid var(--cl-accent-1);
-  border-radius: 0;
-  box-shadow: none;
-  transition: box-shadow 0.2s ease-in-out;
-}
-.card:hover {
-  box-shadow: 0 0 0.5rem 0.5rem var(--cl-accent-2);
-}
-
 .container-cards {
   .card {
     max-width: 18rem;
     background-color: var(--cl-accent-1);
+    border: 0.2rem solid var(--cl-accent-1);
+    box-shadow: none;
+    transition: box-shadow 0.2s ease-in-out;
+    overflow: hidden !important;
+    background-color: var(--cl-accent-1);
     border-radius: 0;
+  }
+  .card-img-wrapper {
+    overflow: hidden;
   }
 
   .card-img-top {
     border-radius: 0;
+    transform: scale(1);
+    transition: transform 0.3s 0.1s ease-out;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    align-self: center;
   }
 
   .text-truncate {
@@ -184,26 +193,29 @@ h2 {
     text-overflow: none;
     overflow: auto;
   }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+  }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 400px) and (max-width: 768px) {
     .card {
       flex-direction: row;
       min-width: 100%;
-      justify-content: space-between;
+      justify-content: space-evenly;
       max-height: 150px;
     }
-    .card-img-top {
-      /* aspect-ratio: 1/1; */
-      max-width: 145px;
-      min-height: 145px;
-      object-fit: cover;
+
+    .card-img-wrapper {
       align-self: center;
     }
-    .card-body {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+    .card-img-top {
+      min-width: 90px;
+      aspect-ratio: 1/1;
     }
+
     .text-truncate {
       white-space: nowrap !important;
       overflow: hidden !important;
@@ -223,5 +235,24 @@ h2 {
     .card .btn-primary:hover {
       text-decoration: underline;
     }
+    .btn.btn-primary {
+      align-self: flex-start;
+    }
+  }
+
+  .card:hover {
+    box-shadow: 0 0 0.5rem 0.5rem var(--cl-accent-2);
+    .card-img-top {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.brand-footer {
+  p {
+    font-size: 0.8rem;
+  }
+  img {
+    width: 105px;
   }
 }
