@@ -13,6 +13,10 @@
   /* typography */
   --font-heading: "Oswald", sans-serif;
   --font-content: "Roboto", sans-serif;
+
+  /* deco */
+  --pg-contact-hd-deco: url("../images/deco_header_contact-page.jpg");
+  --pg-about-hd-deco: url("../images/deco_header_about-page.png");
 }
 
 h1,
@@ -40,7 +44,8 @@ body {
 
 /* arrow link */
 
-.arrow-link {
+.arrow-link,
+.custom-link {
   color: var(--cl-primnary);
 }
 
@@ -51,7 +56,9 @@ body {
 
 /* custom container */
 .container-custom {
-  max-width: 900px;
+  @media screen and (min-width: 960px) {
+    max-width: 960px;
+  }
 }
 
 .bg-section-primary {
@@ -62,6 +69,31 @@ body {
 }
 .bg-footer {
   background-color: var(--cl-accent-1);
+}
+
+/* custom page header deco */
+.page-header {
+  min-height: 30vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: sepia(20%);
+}
+.header-container-bg {
+  background-color: rgba(23, 51, 61, 0.75);
+  width: 100%;
+  min-height: 15vh;
+  margin-top: 8em;
+  backdrop-filter: blur(0.5rem);
+}
+/* page header: about */
+.page-header.about-page {
+  background-image: var(--pg-about-hd-deco);
+}
+
+/* page header: contact */
+.page-header.contact-page {
+  background-image: var(--pg-contact-hd-deco);
 }
 
 /* image deco */
@@ -92,4 +124,10 @@ body {
   aspect-ratio: 1/0.7;
   object-fit: cover;
   object-position: center clamp(60%, 2vw, 40%);
+}
+
+/* about: bio section */
+.bio-year {
+  font-weight: bold;
+  color: var(--cl-accent-2);
 }

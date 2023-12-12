@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,14 +20,16 @@
 
   <!-- custom style -->
   <link rel="stylesheet" href="css/main.css">
-  <title>Home | Eddie Le' Portfolio</title>
+
+
+  <title>About | Eddie Le's Portfolio</title>
 </head>
 
 <body>
   <header>
     <nav class="navbar navbar-expand-sm bg-dark" data-bs-theme="dark">
       <div class="container-md  d-flex justify-content-between">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img src="images/logo.png" alt="Brand logo" width="40">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -36,105 +39,97 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav nav-list-container-custom ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="projects.html">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
+              <a class="nav-link active" aria-current="page" href="#">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link " href="contact.html">Contact</a>
             </li>
           </ul>
 
         </div>
       </div>
     </nav>
-  </header>
+  </header> <!-- end: nav-->
+
+
   <main>
-
-    <!-- section: hero -->
-    <section id="hero" class="bg-section-primary py-5">
-      <div class="container-md"> <!-- hero container-->
-        <div class="row">
-
-          <div class="col-sm-6 py-3">
-            <div class="img-deco">
-              <img src="/images/deco_hero_md.jpg" alt="cup & laptop" class="img-fluid img-hero">
-            </div>
-          </div>
-
-          <div class="col-sm-5 offset-sm-1 d-flex flex-column justify-content-center py-3">
-            <h1>Hi, I'm Eddie</h1>
-            <p>I help build fast, appealing websites.</p>
-            <button type="button" class="btn btn-primary align-self-start mt-lg-5 mt-md-3 mt-sm-2">Let's get
-              started!</button>
-          </div>
-
-        </div> <!-- end: row -->
-      </div> <!-- end: hero container-->
-    </section> <!-- end: hero -->
-
-    <!-- section: projects -->
-    <section id="projects" class="bg-section-accent py-5">
-      <div class="container-md container-custom">
-        <h2>I'm so excited to show you my amazing works</h2>
-        <p>These are my favourite projects that I'm proud to showcase. I've put lots of effort in the creating process.
-          I hope they could awe you as well.
-        </p>
-
-
-
-      </div>
-    </section> <!-- end: projects -->
-
-    <section id="about" class="bg-section-primary py-5">
-      <div class="container-md container-custom"> <!-- about container-->
-        <h2>Something about me</h2>
-        <p>Hello! I'm Eddie. It's great to know that you are visiting my website. Let's break the ice by learning some
-          thing about me in the profile.</p>
-        <a href="#" class="arrow-link">View my profile
-          <i class="bi bi-arrow-right"></i>
-        </a>
-      </div> <!-- end: hero container-->
-    </section> <!-- end: about -->
-
-    <!-- section: contact -->
-    <section id="contact" class="bg-section-accent py-5">
-      <div class="container-md container-custom">
-        <h2>Let's start the conversation</h2>
-        <div class="row">
-          <div class="col-sm-6 my-4">
-            <form>
-              <div class="form-group">
-                <label for="name">Your name</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter your name">
-              </div>
-              <div class="form-group">
-                <label for="email">Your email</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter your email">
-              </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary my-4">Submit</button>
-            </form>
-          </div>
-          <div class="col-sm-6 mt-2 mt-sm-4">
-            <div class="img-deco">
-              <img src="/images/deco_contact_md.jpg" alt="cup & laptop" class="img-fluid ">
-            </div>
-            <p class="mt-3">It's my pleasure to connect with you. Feel free to leave me a message with your contact
-              information
-              below. FYI, I value your privacy, so I promise your info is only for the sake of communication.
-            </p>
-          </div>
+    <section class="page-header about-page pt-5 ">
+      <div class="header-container-bg  d-flex flex-column justify-content-center">
+        <div class="container-md">
+          <h1>About</h1>
         </div>
       </div>
     </section>
+
+    <!-- section: about -->
+    <section id="bio" class="bg-section-primary py-5">
+      <div class="container-md container-custom">
+        <h2>First thing first: Introducing myself</h2>
+
+        <div class="row">
+          <div class="col-sm-4 my-4">
+            <div class="img-deco">
+              <img src="/images/headshot_1x1_md.jpg" alt="cup & laptop" class="img-fluid ">
+            </div>
+          </div>
+
+          <div class="col-sm-7 offset-sm-1 my-4">
+            <p>
+              Hi! My name is Eddie; I also have a Vietnamese name - Thịnh. I'm a teacher turned a web developer &
+              designer.
+            </p>
+            <p>How I got into the industry:
+            <dl>
+              <dt class="ms-2">
+                <span class="bio-year">2017:</span>
+              </dt>
+              <dd class="ms-4">
+                Worked in a school project & was intrigued by the...text
+                editor (really?!)
+              </dd>
+              <dt class="ms-2">
+                <span class="bio-year">2018:</span>
+              </dt>
+              <dd class="ms-4">
+                Touched the surface of web development – HTML
+              </dd>
+              <dt class="ms-2">
+                <span class="bio-year">2019:</span>
+              </dt>
+              <dd class="ms-4">
+                Had a deeper dive into HTML, CSS; got my head bumped into
+                walls with JavaScript fundamentals
+              </dd>
+              <dt class="ms-2">
+                <span class="bio-year">2020:</span>
+              </dt>
+              <dd class="ms-4">
+                The learning continued, with huge interruptions (residing to Canada)
+              </dd>
+              <dt class="ms-2">
+                <span class="bio-year">2023:</span>
+              </dt>
+              <dd class="ms-4">
+                Continued to hone my skills at
+                <span>
+                  <a href="https://www.algonquincollege.com/" target="_blank" rel="noreferer noopener"
+                    class="custom-link">Algonquin College
+                    <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+                </span>
+              </dd>
+            </dl>
+            </p>
+          </div>
+        </div> <!-- end: row-->
+      </div> <!-- end: bio container-->
+    </section> <!-- end: bio-->
 
   </main>
 
