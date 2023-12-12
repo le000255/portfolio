@@ -51,6 +51,49 @@ h2 {
 /* ------------- custom properties ------------ */
 
 /* overriding bootstrap */
+/* navbar */
+.bg-dark {
+  background-color: var(--cl-secondary) !important;
+}
+.navbar[data-bs-theme="dark"] {
+  --bs-navbar-color: var(--cl-base-white);
+  --bs-navbar-hover-color: var(--cl-primnary);
+  --bs-navbar-active-color: var(--cl-accent-2);
+  --bs-navbar-brand-color: var(--cl-primnary);
+  --bs-navbar-brand-hover-color: var(--cl-accent-2);
+  --bs-navbar-toggler-border-color: var(--cl-primnary);
+}
+.nav-item,
+.nav-item:has(.active) {
+  position: relative;
+}
+/* button[aria-expanded="false"]  */
+@media screen and (min-width: 578px) {
+  .nav-item::after,
+  .nav-item:has(.active)::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: clamp(-32%, 2vw, -30%);
+    height: 0.3em;
+    width: 100%;
+    transform: translateX(-50%) translateY(-5%);
+  }
+  .nav-item:has(.active)::after {
+    background-color: var(--cl-accent-2);
+  }
+  .nav-item::after {
+    background-color: var(--cl-primnary);
+    width: 0;
+    transition: width 0.1s ease-in;
+    transform-origin: center;
+  }
+
+  .nav-item:hover::after,
+  .nav-item:focus-within::after {
+    width: 100%;
+  }
+}
 
 /* primary button */
 .btn-primary {
@@ -66,10 +109,28 @@ h2 {
   --bs-btn-active-border-color: var(--cl-accent-2);
   --bs-btn-disabled-color: var(--cl-accent-1);
   --bs-btn-disabled-bg: var(--cl-base-white);
-  --bs-btn-disabled-border-color:var(--cl-base-white);
+  --bs-btn-disabled-border-color: var(--cl-base-white);
   border-radius: 0;
+  border: 0.15rem solid var(--bs-btn-border-color);
   padding-left: 1.5em;
   padding-right: 1.5em;
+}
+
+/* form control */
+.form-control {
+  --bs-body-bg: var(--cl-secondary);
+  --bs-border-color: var(--cl-primnary);
+  --bs-border-width: 0.15em;
+  --bs-body-color: var(--cl-base-white);
+  border-radius: 0;
+}
+
+.btn:focusf {
+  box-shadow: 0 0 0 0.25rem rgba(214, 179, 147, 0.75) !important;
+}
+
+.form-control:focus {
+  border-color: var(--cl-accent-2);
 }
 
 /* arrow link */
@@ -269,8 +330,14 @@ h2 {
 }
 
 footer {
-  .navbar-nav {
+  a {
+    color: var(--cl-base-white);
+    text-decoration: none;
     font-size: 0.9rem;
+  }
+  a:hover {
+    color: var(--cl-accent-2);
+    text-decoration: underline;
   }
   .brand-footer {
     p {
