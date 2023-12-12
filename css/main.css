@@ -52,6 +52,26 @@ h2 {
 
 /* overriding bootstrap */
 
+/* primary button */
+.btn-primary {
+  --bs-btn-color: var(--cl-secondary);
+  --bs-btn-bg: var(--cl-primnary);
+  --bs-btn-border-color: var(--cl-primnary);
+  --bs-btn-hover-color: var(--cl-secondary);
+  --bs-btn-hover-bg: var(--cl-accent-2);
+  --bs-btn-hover-border-color: var(--cl-primnary);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: var(--cl-accent-3);
+  --bs-btn-active-bg: var(--cl-primnary);
+  --bs-btn-active-border-color: var(--cl-accent-2);
+  --bs-btn-disabled-color: var(--cl-accent-1);
+  --bs-btn-disabled-bg: var(--cl-base-white);
+  --bs-btn-disabled-border-color:var(--cl-base-white);
+  border-radius: 0;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
 /* arrow link */
 .navbar-brand .brand-txt {
   display: none;
@@ -74,11 +94,12 @@ h2 {
 
 /* custom container */
 .container-custom {
-  @media screen and (min-width: 960px) {
+  @media screen and (min-width: 1000px) {
     max-width: 960px;
   }
 }
 
+/* custom section background */
 .bg-section-primary {
   background-color: var(--cl-secondary);
 }
@@ -105,21 +126,6 @@ h2 {
   margin-top: 8em;
   backdrop-filter: blur(0.5rem);
 }
-/* ------------- pages & sections ------------- */
-/* page header: projects */
-.page-header.projects-page {
-  background-image: var(--pg-projecs-hd-deco);
-}
-
-/* page header: about */
-.page-header.about-page {
-  background-image: var(--pg-about-hd-deco);
-}
-
-/* page header: contact */
-.page-header.contact-page {
-  background-image: var(--pg-contact-hd-deco);
-}
 
 /* image deco */
 
@@ -140,7 +146,21 @@ h2 {
   /* transform: translate(50%, -50%); */
 }
 
-/* ----------------- sections ----------------- */
+/* ------------- pages & sections ------------- */
+/* page header: projects */
+.page-header.projects-page {
+  background-image: var(--pg-projecs-hd-deco);
+}
+
+/* page header: about */
+.page-header.about-page {
+  background-image: var(--pg-about-hd-deco);
+}
+
+/* page header: contact */
+.page-header.contact-page {
+  background-image: var(--pg-contact-hd-deco);
+}
 /* home: hero section */
 
 .img-hero {
@@ -248,11 +268,16 @@ h2 {
   }
 }
 
-.brand-footer {
-  p {
-    font-size: 0.8rem;
+footer {
+  .navbar-nav {
+    font-size: 0.9rem;
   }
-  img {
-    width: 105px;
+  .brand-footer {
+    p {
+      font-size: 0.8rem;
+    }
+    img {
+      width: 105px;
+    }
   }
 }
