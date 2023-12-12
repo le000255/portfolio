@@ -207,6 +207,8 @@ h2 {
   /* transform: translate(50%, -50%); */
 }
 
+
+
 /* ------------- pages & sections ------------- */
 /* page header: projects */
 .page-header.projects-page {
@@ -229,6 +231,63 @@ h2 {
   aspect-ratio: 1/0.7;
   object-fit: cover;
   object-position: center clamp(60%, 2vw, 40%);
+}
+
+/* home: CAROUSEL */
+.carousel-item {
+  min-height: 200px;
+
+  .item-wrapper {
+    display: flex;
+    flex-direction: column;
+    border: 0.15rem solid var(--cl-accent-2);
+   
+    img {
+      width: 100%;
+      max-height: 30rem;
+      aspect-ratio: 16/10;
+      object-fit: cover;
+      z-index: 0;
+      position: relative;
+      filter: none;
+    }
+
+    .carousel-caption {
+      align-self: center;
+      background-color: rgba(214, 179, 147, 0.75);
+      backdrop-filter: blur(0.4rem);
+      color: var(--cl-secondary);
+      transform: translateY(100%);
+      transition: all 0.2s ease-in;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      h3 {
+        color: var(--cl-secondary);
+      }
+    }
+  }
+  :hover {
+    .carousel-caption {
+      transform: translateY(0);
+    }
+    img {
+      filter: sepia(10%) blur(0.4em) brightness(0.5);
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+  
+    img {
+      filter: none;
+    }
+  }
+}
+
+.carousel-indicators [data-bs-target] {
+  width: clamp(0.3rem, 2vw, 0.8rem);
+  height: clamp(0.3rem, 2vw, 0.8rem);
+  border-radius: 50%;
 }
 
 /* about: bio section */
