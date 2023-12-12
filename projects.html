@@ -1,11 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+  <!-- custom style -->
+  <link rel="stylesheet" href="css/main.css">
   <title>Projects | Eddie Le's Portfolio</title>
 </head>
+
 <body>
-  
+
+  <header>
+    <nav class="navbar navbar-expand-sm bg-dark" data-bs-theme="dark">
+      <div class="container-md  d-flex justify-content-between">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="Brand logo" width="40">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav nav-list-container-custom ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header> <!-- end: nav-->
+
+  <main>
+    <section class="page-header projects-page pt-5 ">
+      <div class="header-container-bg  d-flex flex-column justify-content-center">
+        <div class="container-md">
+          <h1>Projects</h1>
+        </div>
+      </div>
+    </section> <!-- end: page banner -->
+
+    <section id="projects" class="bg-section-primary py-5">
+      <div class="container container-custom">
+        <h2>
+          These are the projects that I proudly present
+        </h2>
+        <p>
+          As a student at Algonquin College, I had a great opportunity to tackle interesting challenges, helping me hone
+          my web design and development skills. I'm proud to showcase these cool projects built with valuable learned
+          skillsets at college.
+        </p>
+        <div class="container-cards pt-4">
+
+          <div class="card text-light">
+            <img src="/images/project_portfolio.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <span class="h5 txt-heading card-title d-inline-block">Card title</span>
+              <p class="card-text text-truncate">Some quick example text to build on the card title and make up the bulk
+                of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">
+                Go somewhere
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer class="bg-footer py-5">
+    <div class="container-md text-center text-sm-start">
+
+      <div class="row">
+
+        <div class="col-sm-4 my-3">
+          <div class="brand-footer ">
+            <img src="images/logo.png" alt="brand logo" class="img-fluid mb-1">
+            <p>
+              &copy;2023 by Eddie Le
+            </p>
+          </div>
+        </div>
+
+        <div class="col-sm-3 col-md-3 offset-sm-2  my-3">
+          <span class="d-inline-block txt-heading h5 mb-4">Navigation</span>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Back to top</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">View my projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Learn about me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Get in touch</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-sm-3 col-md-3 my-3">
+          <span class="d-inline-block txt-heading h5 mb-4">Social Media</span>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/gthinhle-eddie/" target="_blank"
+                rel="noreferer noopener">My LinkedIn Profile
+                <i class="bi bi-box-arrow-up-right"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/le000255" target="_blank" rel="noreferer noopener">My GitHub
+                Page
+                <i class="bi bi-box-arrow-up-right"></i>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
 </body>
+
 </html>
