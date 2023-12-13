@@ -89,7 +89,11 @@
           </div>
           <div class="col-sm-6 offset-sm-1 my-4">
             <div class="img-deco">
-              <img src="/images/deco_contact_md.jpg" alt="cup & laptop" class="img-fluid ">
+              <picture>
+                <source media="(min-width: 650px)" srcset="images/deco_contact_md.jpg" class="img-fluid">
+                <source media="(max-width: 649px)" srcset="images/deco_contact_md-640_x_426.jpg">
+                <img src="images/deco_contact_md.jpg" alt="cup & laptop" class="img-fluid ">
+              </picture>
             </div>
             <p class="mt-3">It's my pleasure to connect with you. Feel free to leave me a message with your contact
               information

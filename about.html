@@ -77,7 +77,12 @@
         <div class="row">
           <div class="col-sm-4 my-4">
             <div class="img-deco">
-              <img src="/images/headshot_1x1_md.jpg" alt="cup & laptop" class="img-fluid ">
+              <picture>
+                <source media="(min-width:650px )" srcset="images/headshot_1x1_md.jpg" class="img-fluid">
+                <source media="(max-width: 649px)" srcset="images/headshot_1x1_md-640_x_640.jpg" class="img-fluid">
+                <img src="images/headshot_1x1_md.jpg" alt="cup & laptop" class="img-fluid">
+              </picture>
+
             </div>
           </div>
 

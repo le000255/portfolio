@@ -63,14 +63,18 @@
 
           <div class="col-sm-6 py-3">
             <div class="img-deco">
-              <img src="/images/deco_hero_md.jpg" alt="cup & laptop" class="img-fluid img-hero">
+              <picture>
+                <source media="(min-width:650px)" srcset="images/deco_hero_md.jpg">
+                <source media="(max-width:649px)" srcset="images/deco_hero_md-640_x_960.jpg">
+                <img src="images/deco_hero_md.jpg" alt="cup & laptop" class="img-fluid img-hero">
+              </picture>
             </div>
           </div>
 
           <div class="col-sm-5 offset-sm-1 d-flex flex-column justify-content-center py-3">
             <h1>Hi, I'm Eddie</h1>
             <p>I help build fast, appealing websites.</p>
-            <a type="button" class="btn btn-primary align-self-start mt-lg-5 mt-md-3 mt-sm-2" href="#contact">Let's get
+            <a class="btn btn-primary align-self-start mt-lg-5 mt-md-3 mt-sm-2" href="#contact">Let's get
               started!</a>
           </div>
 
@@ -101,7 +105,11 @@
             <div class="carousel-item active">
               <a href="https://github.com/le000255/portfolio" target="_blank" rel="noopener noreferer">
                 <div class="item-wrapper">
-                  <img src="images/project_portfolio.png" class="d-block " alt="...">
+                  <picture>
+                    <source media="(min-width: 650px )" srcset="images/project_portfolio.png">
+                    <source media="(max-width: 649px)" srcset="images/project_portfolio-640_x_494.png">
+                    <img src="images/project_portfolio.png" alt="my portfolio project">
+                  </picture>
                   <div class="carousel-caption d-none d-sm-block p-5">
                     <h3>My Portfolio</h3>
                     <p>The projects demonstrate my skillsets in design and development. The
@@ -116,7 +124,11 @@
             <div class="carousel-item">
               <a href="https://github.com/le000255/mtm6201-midterm" target="_blank" rel="noopener noreferer">
                 <div class="item-wrapper">
-                  <img src="images/project_flora-bakeshop.png" class="d-block " alt="...">
+                  <picture>
+                    <source media="(min-width: 650px )" srcset="images/project_flora-bakeshop.png">
+                    <source media="(max-width: 649px )" srcset="images/project_flora-bakeshop-640_x_331.png">
+                    <img src="images/project_flora-bakeshop.png" alt="flora's bakeshop website">
+                  </picture>
                   <div class="carousel-caption d-none d-sm-block p-5">
                     <h3>Flora's Bakeshop</h3>
                     <p>This is the website I built from a previous design in my Design Foundations class.
@@ -142,10 +154,6 @@
         </div> <!-- end: carousel control -->
 
         <!-- END: CAROUSEL -->
-
-
-
-
 
       </div>
     </section> <!-- end: projects -->
@@ -185,7 +193,12 @@
           </div>
           <div class="col-sm-6 mt-2 mt-sm-4">
             <div class="img-deco">
-              <img src="/images/deco_contact_md.jpg" alt="cup & envelope & blank paper sheet" class="img-fluid ">
+              <picture>
+                <source media="(min-width: 650px)" srcset="images/deco_contact_md.jpg">
+                <source media="(max-width: 649px)" srcset="images/deco_contact_md-640_x_426.jpg">
+                <img src="images/deco_contact_md.jpg" alt="cup & envelope & blank paper sheet" class="img-fluid ">
+              </picture>
+
             </div>
             <p class="mt-3">It's my pleasure to connect with you. Feel free to leave me a message with your contact
               information
