@@ -18,15 +18,23 @@
   <!-- bootstrap icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 
+  <!-- animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
   <!-- custom style -->
   <link rel="stylesheet" href="css/main.css">
   <title>Projects | Eddie Le's Portfolio</title>
 </head>
 
 <body>
+  <!-- skip link -->
+  <div class="container-md">
+    <a class="visually-hidden-focusable" href="#projects">Skip to main content</a>
+  </div>
+  <!-- end: skip link -->
 
   <header>
-    <nav class="navbar navbar-expand-sm bg-dark" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-sm bg-dark fixed-top" data-bs-theme="dark">
       <div class="container-md  d-flex justify-content-between">
         <a class="navbar-brand" href="index.html">
           <img src="images/logo.png" alt="Brand logo" width="40">
@@ -79,7 +87,7 @@
         <!-- card grid -->
         <div class="container-cards pt-4">
 
-          <div class="card text-light">
+          <div class="project-item-1 card text-light animate__animated animate__zoomIn">
             <div class="card-img-wrapper">
               <picture>
                 <source media="(min-width: 650px)" srcset="images/project_portfolio.png" class="card-img-top">
@@ -103,7 +111,7 @@
             </div>
           </div> <!-- end: my portfolio card -->
 
-          <div class="card text-light">
+          <div class="project-item-2 card text-light animate__animated animate__zoomIn animate__delay">
             <div class="card-img-wrapper">
               <picture>
                 <source media="(min-width: 650px )" srcset="images/project_flora-bakeshop.png" class="card-img-top">
@@ -127,7 +135,7 @@
             </div>
           </div> <!-- end: flora bakeshop card -->
 
-          <div class="card text-light">
+          <div class="project-item-3 card text-light animate__animated animate__zoomIn animate__delay">
             <div class="card-img-wrapper">
               <picture>
                 <source media="(min-width: 650px)" srcset="images/project_placeholder.png" class="card-img-top">
@@ -141,6 +149,7 @@
               <div class="card-txt-wrapper">
                 <span class="h5 txt-heading card-title d-inline-block">My Future Project</span>
                 <p class="card-text text-truncate">This is currently a placeholder for my upcoming project.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
               </div>
               <a href="https://github.com/le000255/mtm6201-midterm" class="btn btn-primary disabled" target="_blank"

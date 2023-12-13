@@ -17,14 +17,23 @@
   <!-- bootstrap icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 
+  <!-- animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
   <!-- custom style -->
   <link rel="stylesheet" href="css/main.css">
   <title>Home | Eddie Le' Portfolio</title>
 </head>
 
 <body>
+  <!-- skip link -->
+  <div class="container-md">
+    <a class="visually-hidden-focusable" href="#projects">Skip to main content</a>
+  </div>
+  <!-- end: skip link -->
+
   <header>
-    <nav class="navbar navbar-expand-sm bg-dark" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-sm bg-dark fixed-top" data-bs-theme="dark">
       <div class="container-md d-flex justify-content-between">
         <a class="navbar-brand" href="#">
           <img src="images/logo.png" alt="Brand logo" width="40">
@@ -66,7 +75,8 @@
               <picture>
                 <source media="(min-width:650px)" srcset="images/deco_hero_md.jpg">
                 <source media="(max-width:649px)" srcset="images/deco_hero_md-640_x_960.jpg">
-                <img src="images/deco_hero_md.jpg" alt="cup & laptop" class="img-fluid img-hero">
+                <img src="images/deco_hero_md.jpg" alt="cup & laptop"
+                  class="img-fluid img-hero animate__animated animate__zoomIn">
               </picture>
             </div>
           </div>
@@ -196,7 +206,8 @@
               <picture>
                 <source media="(min-width: 650px)" srcset="images/deco_contact_md.jpg">
                 <source media="(max-width: 649px)" srcset="images/deco_contact_md-640_x_426.jpg">
-                <img src="images/deco_contact_md.jpg" alt="cup & envelope & blank paper sheet" class="img-fluid ">
+                <img src="images/deco_contact_md.jpg" alt="cup & envelope & blank paper sheet"
+                  class="img-fluid animate__animated animate__zoomIn">
               </picture>
 
             </div>
